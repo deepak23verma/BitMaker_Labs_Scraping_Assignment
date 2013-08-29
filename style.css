@@ -1,0 +1,18 @@
+body {
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	background-color: lightblue;
+	text-align: center;
+}
