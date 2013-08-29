@@ -11,6 +11,7 @@ File.open("my_scrape.html", "w") do |line|
 	line.write("<!DOCTYPE html>\n")
 	line.write("<html lang=\"en\">\n")
 	line.write("<head>\n")
+	line.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"reset.css\">\n")
 	line.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n")
 	line.write("\t<title>Reddit 2.0</title>\n")
 	line.write("</head>\n")
