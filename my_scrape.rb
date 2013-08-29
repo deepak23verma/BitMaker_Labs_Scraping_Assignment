@@ -24,10 +24,23 @@ File.open("my_scrape.html", "w") do |line|
 			line.puts("<div id=\"header\">")
 				line.puts("<h1>A More Awesome Reddit</h1>")
 			line.puts("</div>") #closing header div
-
-		reddit_links.each do |link|
-			line.puts("<a href=\"#{link['href']}\">#{link.text}</a>")
-			end
+			line.puts("<div id=\"headline\">")
+				line.puts("<a href=\"#{reddit_links[0]['href']}\">#{reddit_links[0].text}</a>")
+			line.puts("</div>") #close headline div
+			line.puts("<div class=\"secondary\">")
+				line.puts("<div class=\"second_row_news\">")
+					line.puts("something1")
+				line.puts("</div>") #close second_row_news div
+				line.puts("<div class=\"second_row_news\">")
+					line.puts("something2")
+				line.puts("</div>") #close second_row_news div
+				line.puts("<div class=\"second_row_news\">")
+					line.puts("something3")
+				line.puts("</div>") #close second_row_news div
+			line.puts("</div>") #close secondary div
+		# reddit_links.each do |link|
+		# 	line.puts("<a href=\"#{link['href']}\">#{link.text}</a>")
+		# 	end
 	####################################################################################
 	####################################################################################
 	####################################################################################
