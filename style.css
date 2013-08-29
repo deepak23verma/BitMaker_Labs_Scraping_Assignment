@@ -14,5 +14,37 @@ h1 {
 
 #header {
 	background-color: lightblue;
-	text-align: center;
+	text-align: right;
+	padding: 30px 20px 30px 0;
+	font-size: 80%;
+}
+
+#headline {
+	/*text-align: center;
+	padding: 10px 25px;
+	margin-bottom: 3px;*/
+	background-color: grey;
+	margin-top: 5px;
+	padding: 10px 40px 40px 40px;
+
+}
+
+.secondary {
+	background-color: pink;
+	margin-top: 5px;
+	padding: 40px 40px 40px 40px;
+
+}
+
+.second_row_news {
+	background-color: lightgreen;
+	float:left;
+	width: 30%;
+	border:1px solid grey;
+	margin-right: 5px;
+
+}
+#footer{
+	background-color: lightblue;
+	margin-top: 5px;
 }
