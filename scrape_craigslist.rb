@@ -1,6 +1,10 @@
-require_relative 'rubygems'
-require_relative 'nokogiri'
-require_relative 'open­uri'
+# encoding: utf-8
+
+require 'rubygems'
+# require 'array'
+# require "math"
+require 'nokogiri'
+require 'open-uri'
 
 page_craigslist = "http://toronto.en.craigslist.ca/search/?areaID=25&subAreaID=&query=macbook+pro&catAbb=sss"
 page = Nokogiri::HTML(open(page_craigslist))
