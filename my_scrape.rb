@@ -12,13 +12,13 @@ File.open("my_scrape.html", "w") do |line|
 	line.write("<html lang=\"en\">\n")
 	line.write("<head>\n")
 	line.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n")
-	line.write("\t<title>Web Scrape</title>\n")
+	line.write("\t<title>Reddit 2.0</title>\n")
 	line.write("</head>\n")
 	####################################################################################
 	####################################################################################
 	####################################################################################
 	line.write("<body>\n")
-		line.write("<h1></h1>")
+		line.write("<h1>A More Awesome Reddit</h1>")
 		reddit_links.each do |link|
 			line.write("<a href=\"#{link['href']}\">#{link.text}</a>\n")
 			end
