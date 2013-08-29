@@ -2,9 +2,10 @@ require "rubygems"
 require "nokogiri"
 require "open-uri"
 
-PAGE_URL = "http://www.alternet.org/world"
+PAGE_URL = "http://www.reddit.com/"
 page = Nokogiri::HTML(open(PAGE_URL))
-word_news_links = page.css()
+reddit_links = page.css("html body.listing-page.hot-page div.content div.spacer div#siteTable.sitetable.linklisting a.title")
+
 
 File.open("my_scrape.html", "w") do |line|
 	line.write("<!DOCTYPE html>\n")
@@ -13,11 +14,18 @@ File.open("my_scrape.html", "w") do |line|
 	line.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n")
 	line.write("\t<title>Web Scrape</title>\n")
 	line.write("</head>\n")
+	####################################################################################
+	####################################################################################
+	####################################################################################
 	line.write("<body>\n")
-	line.write("<h1> Deepak's Web Scrapes</h1>")
-	line.write("<div>
-		</div>")
-
-
+		line.write("<h1></h1>")
+		reddit_links.each do |link|
+			line.write("<a href=\"#{link['href']}\">#{link.text}</a>\n")
+			end
+	####################################################################################
+	####################################################################################
+	####################################################################################
 	line.write("</body>\n")
+	line.write("</html>\n")
 end
+#inspect = reddit_links.each {|link| puts link}	
