@@ -1,6 +1,6 @@
 body {
 	font-family: 'Carrois Gothic', sans-serif;
-	background-color: #53c1c0;
+	background-color: #565051;
 	line-height: 1.5;
 	background-size: 100%;
 	background-attachment: fixed;
@@ -34,7 +34,7 @@ h1 {
 }
 
 #headline {
-	background-color: grey;
+	background-color: #fc6666;
 	border-radius: 0 10px 0 10px;
 	margin-top: 5px;
 	padding: 10px 40px 40px 40px;
@@ -53,17 +53,25 @@ a {
 #headline a {
 	color: white;
 	outline: #54504C;
-
 }
 
+/*#headline a:hover{
+	opacity: 1;
+}*/
+
 #headline:hover {
-	background-color: rgb(145, 140, 141);
+	background-color: #FF3E27;
 }
 
 #headline img {
 	width: 20%;
 	border: 1px solid #65625E;
+
 }
+
+/*#headline img:hover {
+	opacity: 1;
+}*/
 
 #headline img,
 .second_row_news img {
@@ -72,7 +80,7 @@ a {
 
 .secondary {
 	/*background-color: rgb(71, 23, 35);*/
-	background-color: #DADADA;
+	background-color: #f2b844;
 	border-radius: 0 10px 0 10px;
 	margin: 5px;
 	padding: 40px 40px 40px 40px;
@@ -90,6 +98,7 @@ a {
 	border:1px solid;
 	border-color: #BAB6B2;
 	box-shadow: 1px 1px 10px #888888;
+	font-size: 20px;
 }
 
 .second_row_news img {
