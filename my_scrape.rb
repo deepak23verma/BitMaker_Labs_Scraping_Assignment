@@ -39,8 +39,9 @@ File.open("my_scrape.html", "w") do |line|
 				reddit_links.each_with_index do |link, index|
 					if index >0 
 					line.puts("<div class=\"second_row_news\">")
-					line.puts("<a href=\"#{link.css('a.title').first.attributes["href"].value}\">#{link.css('a.title').first.text}</a>")
+					line.puts("<a href=\"#{link.css('a.title').first.attributes["href"].value}\">#{link.css('a.title').first.text}")
 					line.puts("<p><img src=\"#{link.css('img').first.attributes["src"].value} \"></p>") unless link.css('img').first.nil?
+					line.puts("</a>")#close href
 					line.puts("</div>")
 					end
 				end
