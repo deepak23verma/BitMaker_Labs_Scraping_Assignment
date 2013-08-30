@@ -1,9 +1,18 @@
 body {
 	font-family: 'Carrois Gothic', sans-serif;
-	background-color: rgb(245, 125, 5);
+	background-color: #53c1c0;
 	line-height: 1.5;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
+#wrapper {
+	margin: auto;
+	width: 1000px;
+	height: 50%;
+	background-color: rgba(253, 251, 249, 0.5);
+	border-radius: 0 10px 0 10px;
+}
 
 #container {
 	width: 960px;
@@ -54,7 +63,6 @@ a {
 #headline img {
 	width: 20%;
 	border: 1px solid #65625E;
-	box-shadow: 1px 1px 10px white;
 }
 
 #headline img,
