@@ -1,6 +1,7 @@
 body {
 	font-family: 'Carrois Gothic', sans-serif;
-	background-color: #F0F0F0 ;
+	background-color: #F0F0F0;
+	line-height: 1.5;
 }
 
 
@@ -35,31 +36,56 @@ h1 {
 	font-size: 35px;
 	font-weight: bolder;
 	text-align: center;
+}
 
+a {
+	text-decoration: none;
+	color: #282828;
+	font-weight: bold;
 }
 
 #headline a {
-	text-decoration: none;
 	color: white;
 }
 
+#headline a:hover {
+	font-size: 110%;
+}
+
 .secondary {
-	background-color: pink;
-	margin-top: 5px;
+	background-color: rgb(71, 23, 35);
+	border-radius: 0 10px 0 10px;
+	margin: 5px;
 	padding: 40px 40px 40px 40px;
+	/*min-height: 200px;*/
+	overflow: auto;
 
 }
 
 .second_row_news {
-	background-color: lightgreen;
+	background-color: #DADADA;
 	float:left;
 	width: 30%;
-	border:1px solid grey;
-	margin-right: 5px;
-
+	margin: 5px 10px 5px 10px;
+	border-radius: 0 10px 0 10px;
 }
+
+.second_row_news img {
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	border-radius: 0 10px 0 10px;
+}
+
+.second_row_news:hover {
+	border: 3px solid #282828;
+}
+
 #footer{
-	background-color: lightblue;
+	background-color: #282828;
 	margin-top: 5px;
+	border-radius: 0 10px 0 10px;
 	clear: both;
+	padding: 20px 0 40px 20px;
+	color: #E0E0E0;
 }
