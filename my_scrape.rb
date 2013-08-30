@@ -55,7 +55,7 @@ File.open("my_scrape.html", "w") do |line|
 				# line.puts("</div>") #close second_row_news div
 			line.puts("</div>") #close secondary div
 			line.puts("<div id=\"footer\">")
-				line.puts("footer")
+				line.puts("2013 A More Awesome Reddit : Reddit 2.0")
 		# reddit_links.each do |link|
 		# 	line.puts("<a href=\"#{link['href']}\">#{link.text}</a>")
 		# 	end
